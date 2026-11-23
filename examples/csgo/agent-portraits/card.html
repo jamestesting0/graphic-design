@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>After Hours Cup · Northline vs Side Street</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #101719; }
+  svg { display: block; width: 100vw; height: auto; font-family: Arial, sans-serif; }
+  .display { font-family: Impact, "Arial Narrow", sans-serif; font-weight: bold; }
+  .tag { font-weight: bold; letter-spacing: 3px; }
+  .match { display: none; }
+  body:has(#matchup:target) .match { display: inline; }
+  body:has(#matchup:target) .result { display: none; }
+  body:has(#matchup:target) .winner-name { fill: #f5f3e9; }
+</style>
+<body><span id="matchup"></span>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="After Hours Cup. Northline versus Side Street.">
+  <defs>
+    <linearGradient id="stage" x2="1" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#43514b"/><stop offset=".43" stop-color="#162223"/><stop offset="1" stop-color="#3b3833"/></linearGradient>
+    <pattern id="stripes" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(36)"><path d="M0 0V20" stroke="#d7fb37" stroke-width="5"/></pattern>
+    <clipPath id="window"><path d="M0 103H1280V562H0Z"/></clipPath>
+  </defs>
+  <rect width="1280" height="720" fill="#11191b"/>
+  <g clip-path="url(#window)">
+    <rect y="103" width="1280" height="459" fill="url(#stage)"/>
+    <g fill="none" stroke="#e9f1df" opacity=".12" stroke-width="3"><path d="M-10 535L358 105H493L126 535Z M785 562L1178 102H1278L885 562Z"/></g>
+    <path d="M478 103H822L749 562H405Z" fill="#122024" opacity=".65"/>
+    <image href="farlow.png" x="-15" y="114" width="640" height="744"/>
+    <image href="darryl.png" x="740" y="139" width="562" height="530"/>
+  </g>
+  <path fill="#d7fb37" d="M50 28h47L74 50h14L55 77H36l21-23H32Z"/>
+  <text x="115" y="72" class="display" font-size="54" fill="#f5f3e9">AFTER HOURS CUP</text>
+  <text x="1235" y="65" text-anchor="end" class="tag" font-size="23" fill="#d7fb37">CS:GO NIGHT</text>
+  <g text-anchor="middle" fill="#f5f3e9">
+    <text x="640" y="280" class="tag result" font-size="24">FINAL SCORE</text>
+    <text x="640" y="280" class="tag match" font-size="24">MATCHUP</text>
+    <text x="640" y="393" class="display result" font-size="115">1–2</text>
+    <text x="640" y="393" class="display match" font-size="115">VS</text>
+  </g>
+  <path d="M0 562H1280" stroke="#d7fb37" stroke-width="4"/>
+  <path d="M637 585v100" stroke="#627069" stroke-width="2"/>
+  <g text-anchor="middle">
+    <text x="318" y="608" class="tag" font-size="18" fill="#c2c9bf">1ST LIEUTENANT FARLOW</text>
+    <text x="960" y="608" class="tag" font-size="18" fill="#c2c9bf">SIR BLOODY MIAMI DARRYL</text>
+    <text x="318" y="680" class="display" font-size="69" fill="#f5f3e9">NORTHLINE</text>
+    <text x="960" y="680" class="display winner-name" font-size="69" fill="#d7fb37">SIDE STREET</text>
+  </g>
+  <image href="../organizer/side-street.svg" x="1185" y="620" width="66" height="66"/>
+  <rect x="0" y="706" width="1280" height="14" fill="url(#stripes)" opacity=".62"/>
+</svg></body></html>

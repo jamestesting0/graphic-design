@@ -4,6 +4,8 @@
 
 [Announcement poster](poster.png) · [Matchup](matchup.png) · [Example winner](winner.png) · [Editable studio](studio.zip)
 
+The [custom portrait trial](agent-portraits/README.md) follows five generations from two Valve references through a scored match card and an original round-end gong. Compare the drafts to see where a corrected gaze reversed a costume detail.
+
 **Later organizer feedback.** The delivered matchup left a dark gap above the viewer-left team. The [spacing study](spacing.md) compares four treatments at Discord size. The [revised head-to-head](matchup-spacing.png) is the working version in the studio; the delivery above records the original trial.
 
 ## The organizer’s request
