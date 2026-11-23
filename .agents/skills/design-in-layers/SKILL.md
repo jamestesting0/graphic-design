@@ -1,9 +1,13 @@
 ---
 name: design-in-layers
-description: Build editable graphic components and assemble them into a coherent scene or layout. Use for production, source-faithful figures or products, and surgical revisions to selected artwork.
+description: Build editable graphics in layers. Use the host’s image generator for original illustrations, new character poses, scene plates and cutouts. Assemble, integrate and revise the selected artwork.
 ---
 
 # Build the picture in parts
+
+**Choose the tool for this layer.** When the brief calls for a new illustrated pose, scene plate or texture that the supplied art cannot provide, use the image-generation capability available in the current agent. Discover it in the host’s skills and tools. In Codex, use the installed `imagegen` skill and built-in OpenAI image generation when available. On another host, invoke its available equivalent. Follow the host’s invocation and output instructions, open the returned image, and save the candidate with the graphic. A written prompt alone is a pending asset. Follow the [generation workflow](references/image-generation.md) for references, prompting and acceptance.
+
+Place an exact supplied logo or suitable original pose directly. Build text, scores and tables in editable layers. If generation is unavailable or cannot take the originals a faithful likeness requires, use a suitable original or an editable illustration. If only a stand-in is feasible, label it in the proof and record what is still missing.
 
 In a collection, identify the graphic, use, study, selected parents and shared asset versions before editing. Work in an editable folder and save complete source bundles with the setup skill’s version commands. Track the reason for a combined selection alongside its study. For changes to a shared asset, check its consumers before rolling the new version into other graphics.
 

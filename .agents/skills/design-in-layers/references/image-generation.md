@@ -1,0 +1,17 @@
+# Generate a component for a specific placement
+
+1. **Read the drawing first.** Identify the layer, its size in the final graphic, the viewer’s angle, what sits in front of it, and which surface carries its weight. Generate one independently movable component at a time. Keep interacting anatomy together when the contact defines the pose, such as two hands holding one tool.
+2. **Choose the inputs.** For an existing character or product, open the designated originals and explicitly attach the files the generator will use. Give each a job, such as identity, materials or grip. For a new illustration without a likeness requirement, the written art direction can supply the brief. For source-faithful revisions, use a fresh call with the originals and describe the selected draft’s landmarks in words. Check implicit attachments too. If the host carries earlier generated pictures into the request, use a clean reference context.
+3. **Describe a visible action.** Specify the side of the frame, eyeline, where hands and feet land, the overlap at each important contact, the light direction and the clearance needed for the crop. Request transparency for cutouts when supported. Otherwise request a separable background and make the mask in the editor. A background plate may need uninterrupted scenery where a separate foreground element will later cross it.
+4. **Save the returned image and its recipe.** In the existing study record, link the generator used, source files and crop bounds, prompt, candidate file and placed preview. Keep the full cutout editable behind any foreground mask. Put contact shadows, reflections, type and effects on their own layers.
+5. **Make two decisions.** At matched scale, compare proportions, joints, distinguishing features and prop geometry with the original. Then place the candidate at delivery size with effects off. Trace the gesture, grip, weight, scale and light in context. Record *advance* or *revise* for both construction and placement, with a visible reason. If a hand repair repeatedly breaks the wrist or shoulder, generate the connected figure again from the originals. Carry forward the chosen stance and expression. If the new figure still fails, use a suitable original pose or revisit the drawing before adding effects.
+
+## Worked prompt for a caster
+
+The Clan Capital organizer wanted to keep the right wizard’s stance while changing an unnatural shoulder and outward-facing palm. A production prompt for that situation could read:
+
+> Use the attached original wizard render for the hood, robe, shoulder width and hand proportions. Make one full figure on transparency for the viewer-right side of a wide poster. He faces the caster on the left. Keep the planted stance and bent elbow. Turn the casting palm toward his opponent and curl the fingertips around the future spell center. Show where the wrist enters the sleeve. Light the hood from above. Leave room around both hands. The lightning and foreground cloud will be added separately.
+
+Check the bare figure with the spell hidden, then restore the cloud and reflected light. In the studio, an old hand silhouette survived in the reflection after the wizard changed. The isolated replacement could pass while the assembled image still showed extra fingers.
+
+The bracket exposed a different failure. A regenerated Miner held the tool more convincingly, yet its drill bit and housing pointed along different axes. Compare the entire tool to its original before judging the lighting. A better grip alone cannot close that review.

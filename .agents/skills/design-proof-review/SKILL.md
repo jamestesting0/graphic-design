@@ -5,6 +5,8 @@ description: Inspect an exact graphic, revision or export for visual and functio
 
 # Review what the audience and editor actually get
 
+For a generated subject, open the saved candidate, its original references and its placed proof. Record separate decisions on construction and scene fit. Inspect once with effects hidden and again with dependent masks and reflections visible. An old fingertip can survive in the glow after the hand itself is fixed. If a required reference or proof is missing, name the check that remains open.
+
 **Begin from the brief, selected baseline, designated originals and candidate.** Write the decision being requested, the version and the strongest reason it might fail. Open the images yourself. When practical, view equivalent alternatives under neutral labels before reading the maker's explanation or scores. Capture the first read while it is still fresh. For a council, use independent observations on the same proof before discussion, when separate reviewers are authorized. One reviewer can perform all passes and identify the result as self-review.
 
 | Pass | Evidence to collect | Example of a reason to return the work |
