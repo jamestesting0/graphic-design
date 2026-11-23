@@ -2,13 +2,33 @@
 
 Six skills for directing an AI design agent through a collection. Give it the brief, compare drafts on the actual artwork, and choose what advances. Each piece has its own plan and editable master, with shared art direction across the set.
 
-![Open Sky tournament leaderboard with two wizards flanking four editable player rankings](../final/04-leaderboard/populated.png)
+![After Hours Cup announcement, matchup and winner cards](examples/csgo/collection.png)
 
-**Clan Capital ELO** is the tournament series behind the harness. In the *Open Sky* leaderboard above, you can replace a player portrait, redirect the lightning in a wizard’s palm, or adjust an aircraft’s wake independently. [Explore the layer-by-layer build](examples/leaderboard-build.md)
+## Install and start
 
-| Head-to-head | Tournament bracket | Daylight scoreboard |
-| --- | --- | --- |
-| ![Head-to-head matchup with opposing characters and team nameplates](../final/01-h2h/populated.png) | ![Tournament bracket framed by the Archer and Super Miner](../final/02-bracket/populated.png) | ![Daylight scoreboard with brass nameplates and avatar medallions](../final/03-finals/populated.png) |
+From the project where you want to make graphics, run this once. It installs all six skills for Codex, Claude Code, Google Antigravity and Cursor. Use Node.js 22.20+ for the installer and uv for the studio tools. On Windows, run the studio tools in WSL. [Install Node.js](https://nodejs.org/en/download) · [Install uv](https://docs.astral.sh/uv/getting-started/installation/)
+
+```sh
+npx --yes skills@1.9.0 add jamestesting0/graphic-design --skill '*' --agent codex claude-code antigravity cursor -y
+```
+
+Open a fresh agent session in that project and say:
+
+> Use setup-design-studio. My friends are having a game night. Make a Discord poster, a matchup card and a winner card. Show me two ideas and I’ll pick.
+
+The agent creates `.graphic-design/studio.md`, a collection board with one plan per graphic. You can attach a favorite image or an exact team logo, or leave asset sourcing to the designer. To install for just one agent, keep only its name after `--agent`. Add `--global` for a user-wide installation. To update the six skills, rerun the same install command. [Installer options and supported agents](https://github.com/vercel-labs/skills)
+
+### Standalone studio command
+
+For a terminal workflow, install the Python package directly from GitHub. It includes the six skills, the review scripts and the `graphic-design` executable with its Pillow dependency.
+
+```sh
+uv tool install git+https://github.com/jamestesting0/graphic-design.git
+graphic-design init --intent "Community tournament night" poster matchup winner
+graphic-design status
+```
+
+`graphic-design skills-path` prints the bundled skill directory. For another Agent Skills-compatible host, copy the six directories from there to its documented skills location. Each skill carries its own instructions and assets. Agents need local file and command access for the studio workflow. [Agent Skills format](https://agentskills.io/specification) · [Studio command guide](.agents/skills/setup-design-studio/references/commands.md)
 
 ## From brief to delivery
 
@@ -20,7 +40,7 @@ Six skills for directing an AI design agent through a collection. Give it the br
 
 ## Start a collection
 
-Point your agent to the [studio guide](AGENTS.md) and describe the first piece you want to make.
+Describe the first piece you want to make. The [studio guide](AGENTS.md) explains how the six skills work together.
 
 > I want to make a poster for our Clash of Clans tournament in Clan Capital. We’ll announce it on Discord, then use the same look for matchup cards and a leaderboard. I’ve attached the game art and a screenshot of our channel. I picture two Super Wizards facing off above the valley. Can you show me a wide shot and a close-up in the Discord preview, with the tournament name and date in place? Let’s pick the poster direction first.
 

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling>=1.26,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "graphic-design-harness"
+version = "0.1.0"
+description = "Six agent skills and a local studio CLI for multi-graphic design projects"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["Pillow>=10"]
+
+[project.urls]
+Repository = "https://github.com/jamestesting0/graphic-design"
+
+[project.scripts]
+graphic-design = "graphic_design_harness:main"
+
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/.agents/skills", "/README.md", "/pyproject.toml"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/graphic_design_harness"]
+
+[tool.hatch.build.targets.wheel.force-include]
+".agents/skills" = "graphic_design_harness/skills"

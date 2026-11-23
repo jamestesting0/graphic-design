@@ -36,11 +36,11 @@ For a collection, record the decision against the exact version and proof digest
 
 ## Raster coverage helper
 
-From this skill directory, use Python with Pillow installed. Use an empty output folder for each version.
+Use `uv run --script` with the bundled scripts to provision their Python and Pillow dependencies. Resolve script paths from this skill’s installed directory and artwork paths from the commission. The examples assume those paths are accessible from the current directory. Use an empty output folder for each version.
 
 ```sh
-python3 scripts/detail_review.py proof.png --tiles review-v3/tiles
-python3 scripts/detail_review.py proof.png --record review-v3/observations.json
+uv run --script scripts/detail_review.py proof.png --tiles review-v3/tiles
+uv run --script scripts/detail_review.py proof.png --record review-v3/observations.json
 ```
 
 Open **every** tile in the manifest at native size. Write the record after inspection. The JSON needs `reviewer`, the manifest's `sha256`, an `observations` object keyed by all tile IDs, and `zoom_checks` with a native `box` in left, top, right, bottom coordinates, `scale` and `finding`. Use the same approach manually when a raster tool is unavailable. For vector and print masters, render each relevant output at its intended inspection resolution and also inspect editable paths, overprint or trim where applicable.
@@ -50,7 +50,7 @@ A successful command establishes coverage bookkeeping. A fully covered render ca
 For a surgical revision, draw the allowed edit boxes on the **baseline before editing**. Keep them tight around the target and its intended shadow or spill. First export the unchanged master twice if the renderer’s repeatability is unknown. If the two outputs differ, stabilize the renderer, fonts and export settings, then render both parent and child using that setup. This keeps a real edit outside the allowed region detectable. With Pillow 10 or newer, compare registered 8-bit PNG exports. This example permits changes only inside a rectangle on the left:
 
 ```sh
-python3 scripts/check_edit_scope.py selected.png revision.png --allow 120 340 420 560
+uv run --script scripts/check_edit_scope.py selected.png revision.png --allow 120 340 420 560
 ```
 
 Bounds exclude the right and bottom edges. Repeat `--allow` for disconnected areas. Omit it to check whether turning the effect off reproduces the entire baseline. A nonzero exit identifies a mismatch or unusable inputs. Reopen the flagged region before widening a mask. This check compares decoded RGBA values. Review color profiles separately for color-managed delivery.

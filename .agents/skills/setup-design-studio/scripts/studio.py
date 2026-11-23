@@ -1,3 +1,7 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["Pillow>=10"]
+# ///
 import argparse
 from contextlib import contextmanager
 from datetime import datetime, timezone
@@ -273,9 +277,10 @@ def execute(studio, args):
 
 
 def parser():
-    cli = argparse.ArgumentParser(description="Manage a local multi-graphic design studio (Python 3.11+, macOS/Linux).")
+    cli = argparse.ArgumentParser(prog="graphic-design", description="Manage a local multi-graphic design studio (Python 3.11+, macOS/Linux).")
     cli.add_argument("--project", type=Path, default=Path.cwd())
     sub = cli.add_subparsers(dest="command", required=True)
+    sub.add_parser("skills-path", help="print the directory containing the installed agent skills")
     init = sub.add_parser("init", help="start or resume a collection without replacing briefs")
     init.add_argument("--intent", required=True)
     init.add_argument("graphics", nargs="+", type=identifier)
@@ -320,6 +325,9 @@ def parser():
 def main():
     cli = parser()
     args = cli.parse_args()
+    if args.command == "skills-path":
+        print(Path(__file__).resolve().parents[2])
+        return
     studio = args.project.resolve() / ".graphic-design"
     try:
         if args.command == "init":

@@ -1,3 +1,7 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["Pillow>=10"]
+# ///
 import argparse
 import hashlib
 import json
