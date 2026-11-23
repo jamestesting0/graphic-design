@@ -19,8 +19,6 @@ Two community tournaments, from the opening announcement to the final score. The
 
 </details>
 
-The Clan Capital artwork is unofficial fan content. Supercell does not endorse it. [Supercell Fan Content Policy](https://supercell.com/en/fan-content-policy/)
-
 ## Install and start
 
 From the project where you want to make graphics, run this once. It installs all six skills for Codex, Claude Code, Google Antigravity and Cursor. Use Node.js 22.20+ for the installer and uv for the studio tools. On Windows, run the studio tools in WSL. [Install Node.js](https://nodejs.org/en/download) · [Install uv](https://docs.astral.sh/uv/getting-started/installation/)
