@@ -6,6 +6,14 @@
 4. **Save the returned image and its recipe.** In the existing study record, link the generator used, source files and crop bounds, prompt, candidate file and placed preview. Keep the full cutout editable behind any foreground mask. Put contact shadows, reflections, type and effects on their own layers.
 5. **Make two decisions.** At matched scale, compare proportions, joints, distinguishing features and prop geometry with the original. Then place the candidate at delivery size with effects off. Trace the gesture, grip, weight, scale and light in context. Record *advance* or *revise* for both construction and placement, with a visible reason. If a hand repair repeatedly breaks the wrist or shoulder, generate the connected figure again from the originals. Carry forward the chosen stance and expression. If the new figure still fails, use a suitable original pose or revisit the drawing before adding effects.
 
+## Change the pose and preserve the identity
+
+Before generating a source-based asset, write down the **requested change**, the **visible details to keep**, and anything **hidden or ambiguous in the original**. Pick discriminating details. A floral shirt identifies a family of costumes; the striped tab on one shoulder identifies how this costume is assembled. For a product the equivalent might be the side carrying the clasp and where its strap passes behind the label. Use the original file for exact supplied marks that must reproduce precisely.
+
+For an asymmetric subject, state both anatomical side and screen position in the intended view. Describe the head, torso and gaze separately. “Right side of the card” says nothing about where the face points. A useful instruction is “torso nearly square to camera, nose projects toward the left edge, striped tab stays on the shoulder at image left.” Check the source before naming a detail hidden by a hand, hair or a fold. Find another original angle if the hidden construction is decisive. When evidence runs out, change the crop or state the uncertainty.
+
+For a failed attempt, compare source, old and new at a common landmark scale. Attach a documented crop of the original when it makes the missed detail easier to see. Specify the visible defect and one fresh constraint. Compare both the repaired feature and a previously correct neighbor. Mirroring a cutout to fix its gaze also reverses patches, lettering and garment construction.
+
 ## Worked prompt for a caster
 
 The Clan Capital organizer wanted to keep the right wizard’s stance while changing an unnatural shoulder and outward-facing palm. A production prompt for that situation could read:
