@@ -2,7 +2,24 @@
 
 Six skills for directing an AI design agent through a collection. Give it the brief, compare drafts on the actual artwork, and choose what advances. Each piece has its own plan and editable master, with shared art direction across the set.
 
-![After Hours Cup announcement, matchup and winner cards](examples/csgo/collection.png)
+## Showcase
+
+Two community tournaments, from the opening announcement to the final score. The **Clan Capital ELO** series stages its matches above a Clash of Clans valley. The **CS:GO After Hours Cup** uses the Hotel Aurore street on Dust II to tie three Discord cards together.
+
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="examples/showcase/open-sky.jpg">
+  <img src="examples/showcase/tournament-collections.webp" alt="Eight tournament graphics, including the Open Sky leaderboard, the Clan Capital bracket and the revised After Hours Cup matchup.">
+</picture>
+
+<details>
+<summary>View each graphic at your own pace</summary>
+
+- **Clan Capital ELO** · [Open Sky leaderboard](examples/showcase/open-sky.jpg) · [Head-to-head](examples/showcase/head-to-head.jpg) · [Bracket](examples/showcase/bracket.jpg) · [Finals scoreboard](examples/showcase/scoreboard.jpg) · [4–2 result](examples/showcase/match-result.jpg)
+- **CS:GO After Hours Cup** · [Announcement](examples/csgo/poster.png) · [Revised matchup](examples/csgo/matchup-spacing.png) · [Winner](examples/csgo/winner.png)
+
+</details>
+
+The Clan Capital artwork is unofficial fan content. Supercell does not endorse it. [Supercell Fan Content Policy](https://supercell.com/en/fan-content-policy/)
 
 ## Install and start
 
