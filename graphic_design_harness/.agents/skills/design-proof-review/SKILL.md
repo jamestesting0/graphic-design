@@ -1,0 +1,56 @@
+---
+name: design-proof-review
+description: Inspect an exact graphic, revision or export for visual and functional defects. Use during design reviews and sign-off, especially when earlier reviews missed errors or a fix might damage approved details.
+---
+
+# Review what the audience and editor actually get
+
+**Begin from the brief, selected baseline, designated originals and candidate.** Write the decision being requested, the version and the strongest reason it might fail. Open the images yourself. When practical, view equivalent alternatives under neutral labels before reading the maker's explanation or scores. Capture the first read while it is still fresh. For a council, use independent observations on the same proof before discussion, when separate reviewers are authorized. One reviewer can perform all passes and identify the result as self-review.
+
+| Pass | Evidence to collect | Example of a reason to return the work |
+|---|---|---|
+| Whole-frame spacing and balance | Look at the entire export at delivery size before zooming. Locate the widest quiet shape and the most crowded group. Describe what each does to the reading order. Squint or inspect a small grayscale copy to see the large masses, then confirm the first and second reads in color. | Two equal team panels look balanced in isolation, while a bright landmark over one and a dark shelf over the other pull the whole frame to one side. |
+| Destination | Open the actual crop at use size in its surround. Read the required words, identify the action, trace a path, or distinguish the editions. For print, use a physical proof at the specified scale if available. Record whether the view was live, a screenshot composite or a simulation. | Header and back-row object touch only in the short format. A large avatar looks clear, but its rim merges with the background in the circular slot. |
+| Construction | Compare candidate to the authoritative source at matched scale on one stable landmark. Trace interacting parts, axes, hands, load paths and hidden connections. Check both halves of the figure and incidental subjects. Ask what the pose means with effects off. For flat graphics, follow glyph shapes, grid alignment, logo clearspace and icon semantics instead. | An emblem matches while the basket has doubled in proportion. A hand has the right finger count while its wrist angle cannot support the load. |
+| Scene and material | Toggle covering layers. Compare value, texture scale, edge softness, contact, reflections and shadows to a nearby object at the same depth. View a translucent component over light and dark mattes, including its reusable edges outside the final crop. Trace an effect from its source to the surfaces receiving it. | World details were erased while masking the foreground. The reflection crosses the unlit side. A matte edge survives on dark even though the hero hides it in the preview. |
+| Native coverage | Sweep the full frame at 1 image pixel per display pixel in overlapping rows, including outer edges, quiet sky, repetitive textures and areas beyond the marked defect. Inspect suspicious joins at 2–4×. Note a specific feature per region and exact bounds for close-ups. Restore the full view to judge impact. | A straight mist cutoff spans neighboring tiles. A grain rectangle extends from a board into the clouds. |
+| Revision and function | Reopen the parent and the user-marked crop at identical registration. Test the change, its neighbors and *each previously settled quality it could break*. Compare protected pixels where equality is expected. Reopen the source, replace a value, toggle a pass and export. Exercise the shortest and longest data, empty slots, alternate formats and masks relevant to the brief. | Improved fingers cost the chosen expression or cloak. Numbers fill a blank that should retain only the stars. The print proof works while the attachment clips. |
+
+For timed media, run the same reading and composition checks on key frames, inspect transitions in motion, and listen through the encoded mix, including its end or loop. A still cannot establish playback timing.
+
+**Close spacing objections with a comparison.** Mark the viewer-relative gap and its neighbors. Record the visible consequence, such as a heading drifting away from its group, two competing focal points, or a badge pressed into an edge. Where the balance is disputed, compare the current arrangement with a tighter and a more open treatment at the same size and with the same content. Try moving, cropping, resizing or removing an element first. Identify which change restores the intended reading order and which clear space should survive. Return the work if the gap still looks accidental or its repair crowds another group. A margin measurement, density percentage or completed tile sweep alone cannot settle this judgment.
+
+**Read independently distributed pieces in isolation.** Show one export at its smallest intended size before the reviewer sees the collection, the answer key or the maker’s explanation. Have them say what it is, what happened or happens next, and which visible detail tells them. Then compare the answers to the brief and the user’s reason for choosing the direction. If the audience recognized a street, check how much of its distinctive landmark survives the crop and overlays on every applicable card. An image file present in the master can be entirely hidden in the export. Read any call to action from the audience’s actual location and check whether they can carry it out.
+
+**Re-test the actual objection.** If a reviewer wrote “the core is near the folded fingers,” carry that wording and crop into the next round. “Inside the hand” answers a different question from “centered on the fleshy palm.” First mark the intended contact with FX hidden, then compare the core to it with FX on at the same registration. Check the second emitter and the tightest alternate crop. Record any surviving fingertip/bevel near-touch at delivery size. Use measured offset as supporting evidence only after identifying the correct landmark. Record whether the defect was fixed, explicitly accepted, or remains open. Keep the item open across handoffs until one of those outcomes has evidence.
+
+**Make the decision falsifiable.** Record: reviewer and scope · candidate ID or digest · reference and baseline · surface and actual size · region or timecode · visible evidence · consequence · advance / revise / unverified. For a defect, name its owning layer, the smallest plausible fix and what must survive. For an advance, identify the closest call and what resolved it. Keep the two questions “does the part match its source?” and “does it work in place?” separately answerable. If either required proof is missing, mark that question unverified.
+
+**Close the loop.** Repair the earliest responsible layer. Compare before/after and reopen the specific objection plus affected neighbors and output formats. Bind each record to the new render. Carry a tile forward only if its decoded pixels match a tile the same reviewer actually inspected. Always recheck the global first read and placement. A user correction reopens the issue even when reviewers agreed. Repeated failure of the same structure calls for a different source, drawing or construction method. Stop when blockers are resolved and the brief holds, the user selects a version or asks to stop, or the agreed review limit is reached. Report any open objection at the limit. Attribute a requested score to its reviewer, version and scope. Keep genuine disagreement visible.
+
+**Release decision.** Return the work for a wrong identity or data value, an unreadable required field, a broken support or joint, a lost user-selected quality, or a change outside the authorized region. A reviewer who flags one of these gets an answer in pixels, a corrected export, or an explicit unresolved finding. A majority vote cannot close it. For a taste disagreement with a sound construction, retain both views and the reason for the choice.
+
+Hand over the selected editable version with dependencies, requested exports, use-size proofs and, for templates, a blank and a populated example with replacement instructions. Verify the released files against the selected version. Include the actual review surface, any smaller defects, and any untested destination or format in the handoff.
+
+For a collection, record the decision against the exact version and proof digest. Use the setup skill’s approval command for the requested use. Compare the labeled sheet of approved versions alongside each destination preview for common materials, legibility, alignment and hierarchy. Check “omit the accent” when a technically clean element crowds the composition. State which findings are graphic-specific and which affect the shared direction. Verify the packaged manifest, selected versions and files before declaring the set delivered.
+
+## Raster coverage helper
+
+From this skill directory, use Python with Pillow installed. Use an empty output folder for each version.
+
+```sh
+python3 scripts/detail_review.py proof.png --tiles review-v3/tiles
+python3 scripts/detail_review.py proof.png --record review-v3/observations.json
+```
+
+Open **every** tile in the manifest at native size. Write the record after inspection. The JSON needs `reviewer`, the manifest's `sha256`, an `observations` object keyed by all tile IDs, and `zoom_checks` with a native `box` in left, top, right, bottom coordinates, `scale` and `finding`. Use the same approach manually when a raster tool is unavailable. For vector and print masters, render each relevant output at its intended inspection resolution and also inspect editable paths, overprint or trim where applicable.
+
+A successful command establishes coverage bookkeeping. A fully covered render can still receive **revise**. Another reviewer's record, the maker's notes, technical tests or a previous version's score cannot close a visual objection.
+
+For a surgical revision, draw the allowed edit boxes on the **baseline before editing**. Keep them tight around the target and its intended shadow or spill. First export the unchanged master twice if the renderer’s repeatability is unknown. If the two outputs differ, stabilize the renderer, fonts and export settings, then render both parent and child using that setup. This keeps a real edit outside the allowed region detectable. With Pillow 10 or newer, compare registered 8-bit PNG exports. This example permits changes only inside a rectangle on the left:
+
+```sh
+python3 scripts/check_edit_scope.py selected.png revision.png --allow 120 340 420 560
+```
+
+Bounds exclude the right and bottom edges. Repeat `--allow` for disconnected areas. Omit it to check whether turning the effect off reproduces the entire baseline. A nonzero exit identifies a mismatch or unusable inputs. Reopen the flagged region before widening a mask. This check compares decoded RGBA values. Review color profiles separately for color-managed delivery.

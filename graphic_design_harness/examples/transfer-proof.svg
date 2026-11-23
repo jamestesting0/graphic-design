@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="336" viewBox="0 0 540 336" role="img" aria-labelledby="title desc">
+  <title id="title">Platform 2 display revision study</title>
+  <desc id="desc">Three versions of a wayfinding display shown at the same scale.</desc>
+  <defs>
+    <g id="panel">
+      <rect width="420" height="80" rx="8" fill="#162d32"/>
+      <text x="18" y="35" font-family="sans-serif" font-size="23" font-weight="bold" fill="#fff">Platform 2</text>
+      <path d="M19 58H324" fill="none" stroke="#dae9e4" stroke-width="3"/>
+      <circle cx="42" cy="58" r="5" fill="#dae9e4"/>
+    </g>
+    <g id="stop">
+      <circle r="12" fill="#162d32" stroke="#fff" stroke-width="2"/>
+    </g>
+  </defs>
+  <rect width="540" height="336" fill="#faf8f3"/>
+  <g font-family="sans-serif" font-size="17" fill="#162d32">
+    <text x="16" y="55">Parent</text><text x="16" y="163">A</text><text x="16" y="271">B</text>
+  </g>
+  <g transform="translate(94 12)">
+    <use href="#panel"/><use href="#stop" x="324" y="58"/>
+    <circle cx="324" cy="58" r="5" fill="#ffbc54"/>
+  </g>
+  <g transform="translate(94 120)">
+    <use href="#panel"/><path d="M324 58H370" stroke="#dae9e4" stroke-width="3"/>
+    <use href="#stop" x="370" y="58"/><circle cx="370" cy="58" r="5" fill="#ffbc54"/>
+    <circle cx="324" cy="58" r="5" fill="#ffbc54"/>
+  </g>
+  <g transform="translate(94 228)">
+    <use href="#panel"/><path d="M324 58H370" stroke="#dae9e4" stroke-width="3"/>
+    <use href="#stop" x="370" y="58"/><circle cx="375" cy="55" r="5" fill="#ffbc54"/>
+  </g>
+</svg>

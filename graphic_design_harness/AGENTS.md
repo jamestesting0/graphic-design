@@ -1,0 +1,24 @@
+# Graphic design studio
+
+For a new collection start with [studio setup](.agents/skills/setup-design-studio/SKILL.md). Capture the user’s intent in a project-local `.graphic-design/` workspace. Keep one collection board, shared direction and library, and a separate brief, stage plan, studies, version history and approval record for every graphic. Ask for a choice at meaningful creative forks; a delegated choice can advance with its rationale. For an existing collection open the board and current proof before editing. A discussion or draft-only request stops at the requested decision.
+
+| When | Skill | What the next stage receives |
+|---|---|---|
+| Empty project or returning commission | [Studio setup](.agents/skills/setup-design-studio/SKILL.md) | Collection inventory, per-graphic records and working/approved status board |
+| New brief, series or change of direction | [Art investigation and direction](.agents/skills/design-direction/SKILL.md) | Shared art direction, local asset requirements, target surface and studies |
+| Preparing the set or its next decision | [Collection and stage planning](.agents/skills/plan-design-stages/SKILL.md) | Collection order, individual plans, comparable drafts and recorded selection |
+| Building or changing a component | [Layered production](.agents/skills/design-in-layers/SKILL.md) | Named editable components, assembled unembellished proof, restorable baseline |
+| Visual effects, motion or a soundtrack | [Effects and sound](.agents/skills/design-effects-and-sound/SKILL.md) | Independently adjustable passes, matched before/after and, for timed work, a playable export |
+| After each consequential decision and before handoff | [Visual review](.agents/skills/design-proof-review/SKILL.md) | Findings on the exact version, repairs or acceptance within the inspected scope |
+
+At each transition, open the artifact. Keep a short record alongside it with the version, source of truth, first read, objection and location, decision, and the proof that closes the objection. Return a defective component to the stage that owns it. Reopen dependent checks after changing a drawing, camera, pose, field layout or timing. A typo or a crop usually needs just its local stage and an in-context check.
+
+The organizer can start with a sentence, hand over exact assets at any stage or leave sourcing to the designer. Keep supplied originals, found materials and studio-created elements traceable in the board’s asset register. Record why the organizer selected a draft and test that quality on each piece that will reach the audience separately.
+
+**Using this folder elsewhere.** Point the agent at this file or copy all six directories under `.agents/skills/` into the commission’s skill directory. Tell it the intent and desired endpoints. The [command guide](.agents/skills/setup-design-studio/references/commands.md) covers collection setup, studies, rollback, separate final uses and release packages. The studio CLI supports macOS/Linux with Python 3.11+ and Pillow 10+. Historical artwork links use this studio’s archive; the operating skills and wayfinding exercise travel independently.
+
+**Example brief.** “Build a product launch graphic from the supplied bottle photography. Keep the logotype and the label editable. Deliver a shelf card and a six-second reveal.” Start with the viewing distance, print trim and safe text, then draw the bottle, price and logo at actual size. Build the bottle, contact shadow, label, price and foreground on separate layers. Review the curve of the label and its baseline on the shelf proof. For the reveal, add its highlight and audio cue after the product reads on a silent timeline. Print the crop or label the print proof simulated. Play the encoded clip through to its last frame. A price-only revision can start directly from the locked label and price layers.
+
+Follow the [worked leaderboard build](examples/leaderboard-build.md) to see how the user directed the image layer by layer and which groups to toggle in the finished master. Use the [calibration exercises](examples/review-lab.md) to practice catching false approvals. Exercise 8 includes a portable wayfinding proof for use outside this studio. The [session audit](examples/session-audit.md) traces the design decisions and the limits of the historical evidence.
+
+For a complete multi-graphic example, unpack the [Harbor Tea commission](examples/harbor-tea/commission.zip), then open `.graphic-design/studio.md` inside it. It includes both shelf-card options, the approved social tile, and the editable six-second reveal with its original soundtrack. The [contact sheet](examples/harbor-tea/contact-sheet.png) shows the three delivered pieces. The [release review](examples/collection-release-review.md) records how they were checked.
