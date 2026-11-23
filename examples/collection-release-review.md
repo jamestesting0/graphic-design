@@ -1,6 +1,6 @@
 # Six-skill studio release review
 
-**Verdict, 23 November 2026.** The independent recheck passed the implementation plan. The maker’s release review passed the portable six-skill harness for the local collection workflows exercised below. The first plan review returned it for revision because the scenarios lacked exact entry points, failure and retry conditions, named historical proofs, and measurable print and timed-media checks. Those conditions were added before implementation began. [Plan and acceptance criteria](../IMPLEMENTATION_PLAN.md#acceptance-and-final-gate)
+**Verdict, 23 November 2026.** The independent recheck passed the implementation plan. The maker’s release review passed the portable six-skill harness for the local collection workflows exercised below. The first plan review returned it for revision because the scenarios lacked exact entry points, failure and retry conditions, named historical proofs, and measurable print and timed-media checks. Those conditions were added before implementation began.
 
 ## Open the transfer commission
 
