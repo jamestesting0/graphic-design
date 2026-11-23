@@ -45,6 +45,19 @@ graphic-design status
 
 `graphic-design skills-path` prints the bundled skill directory. For another Agent Skills-compatible host, copy the six directories from there to its documented skills location. Each skill carries its own instructions and assets. Agents need local file and command access for the studio workflow. [Agent Skills format](https://agentskills.io/specification) · [Studio command guide](.agents/skills/setup-design-studio/references/commands.md)
 
+## Which skill to use
+
+Start with your brief. The agent can guide you through the stages, or you can name a skill when you want help with one part. Here’s how the six fit together for a community tournament.
+
+| Skill | What it does | What you might ask |
+| --- | --- | --- |
+| [setup-design-studio](.agents/skills/setup-design-studio/SKILL.md) | Starts a collection or reopens one. Tracks drafts, approvals and the next decision for each piece. | “We’re back for week two. Which cards can we reuse, and what still needs my pick?” |
+| [design-direction](.agents/skills/design-direction/SKILL.md) | Finds missing assets and uses your references to explore the look and layout. | “I only have our team badge. Can you find a Dust II scene and show me two ways the poster could look?” |
+| [plan-design-stages](.agents/skills/plan-design-stages/SKILL.md) | Sets the order of work and identifies what you need to choose before the next piece starts. | “The announcement goes out Friday. Can we settle that first and leave the winner card until later?” |
+| [design-in-layers](.agents/skills/design-in-layers/SKILL.md) | Builds the chosen design with separately editable elements, so next week’s details can change. | “I like this matchup. Make it easy to swap both portraits and team names for the next round.” |
+| [design-effects-and-sound](.agents/skills/design-effects-and-sound/SKILL.md) | Adds finishing effects or times motion and audio to an approved design. | “For the winner reveal, bring the score in on the drum hit and hold it long enough to read.” |
+| [design-proof-review](.agents/skills/design-proof-review/SKILL.md) | Inspects the export at full resolution and where people will see it. Tests a real use, such as changing a score. | “Before I post this, check the 4–2 alignment, both portraits and whether the longer team name fits on a phone.” |
+
 ## From brief to delivery
 
 - **Give each reference a job.** Use original game art for character proportions, a favorite poster for dramatic staging, and a real Discord screenshot for scale. Record which qualities the user wants to borrow.
